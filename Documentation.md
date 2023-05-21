@@ -7,6 +7,7 @@ The problem statement I chose to work on was "Simple Library Management" under t
     The filter can be applied for the book name which is a primary requirement and as additional filter fields an user can also filter out based on author's name, published date and the subject.
 
 **Code Structure**:
+
     **_index.html_**:
     - The project starts with a login page, where the user can login, if they already have an account or are an existing user (or) can create a new account by registering themselves up for it.
     - For the current time being, the only avaiable user is "admin" with password "123456". The user can give the credentials in the available input fields and then after clicking the "Log In" button,
