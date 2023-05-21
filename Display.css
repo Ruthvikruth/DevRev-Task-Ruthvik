@@ -1,0 +1,156 @@
+body
+{
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.filtergrid div
+{
+    margin-left: 2%;
+}
+
+header
+{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin: 0%;
+    text-align: right;
+}
+
+header span a
+{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+header span span:hover
+{
+    text-decoration:underline solid #00BFA6;
+}
+
+section div p
+{
+    font-size: 20px;
+}
+
+.filtergrid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+label
+{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    text-align: left;
+    text-indent: 40px;
+    color: white;
+}
+
+input
+{
+    padding-left: 10px;
+    border-radius: 5px;
+    margin-right: 15%;
+    font-size: 20px;
+}
+
+.filter
+{
+    background-color: #fff;
+    padding: 14px 40px;
+    color: #00BFA6;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid #00BFA6;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 0.6s;
+}
+
+.filter:hover
+{
+    transition: .4s;
+    border: 2px solid #fff;
+    background-color: #00BFA6;
+    color: #fff;
+}
+
+.filter:active
+{
+    background-color: #87dbd0;
+}
+
+.card
+{
+    background-color: #0ff3d4;
+    margin-top: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    width: 80%;
+    height: 120%;
+    border-radius: 5px;
+    position: relative;
+}
+
+.grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 5%;
+    margin-right: 5%;
+    row-gap: 15%;
+}
+
+.download
+{
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #00BFA6;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    margin-bottom: 5%;
+}
+
+.download:hover::before
+{
+    transform: scaleX(1);
+}
+
+.download-content
+{
+    position: relative;
+    z-index: 1;
+}
+
+.download::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(82.3deg,#00BFA6,#ee6c6c);
+    transition: all 0.475s;
+}
+
+.downloadURL
+{
+    position: absolute;
+    bottom: 10px;
+}

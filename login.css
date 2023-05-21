@@ -1,0 +1,76 @@
+body
+{
+    background-color: #111111c0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    margin-top: 5%;
+}
+
+button
+{
+    background-color: #fff;
+    padding: 14px 40px;
+    color: #00BFA6;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid #00BFA6;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 0.6s;
+}
+
+button:hover
+{
+    transition: .4s;
+    border: 2px solid #fff;
+    background-color: #00BFA6;
+    color: #fff;
+}
+
+button:active
+{
+    background-color: #87dbd0;
+}
+
+p
+{
+    color: white;
+    letter-spacing: 1px;
+    font-size: 36px;
+}
+
+.forms
+{
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 3%;
+    background-color: #00BFA6;
+    border-radius: 5px;
+}
+
+label
+{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    text-align: left;
+    text-indent: 40px;
+    color: white;
+}
+
+input
+{
+    padding-left: 10px;
+    border-radius: 5px;
+    margin-right: 15%;
+    font-size: 20px;
+}
+
+.grid
+{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    padding-bottom: 5%;
+}

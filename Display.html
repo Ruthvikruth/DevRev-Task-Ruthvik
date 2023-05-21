@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="Display.css">
+
+</head>
+
+<script src="Display.js"></script>
+
+<body>
+
+    <header>
+        <center><h1>The Text Studio</h1></center>
+        <span>
+            <span><a href="#">Home</a></span>
+            <span><a title="Just a title">About</a></span>
+            <span><a href="#">Contact Us</a></span>
+            <span><a href="#">Log In</a></span>
+        </span>
+    </header>
+
+    <section style="background-color: #00BFA6;">
+        <br>
+        <section class="filtergrid">
+            <div>
+                <label for="title">Book Name</label>
+                <input type="text" placeholder="Search with book title" id="title">
+            </div>
+
+            <div>
+                <label for="authorname">Author Name</label>
+                <input type="text" placeholder="Search with author name" id="authorname">
+            </div>
+
+            <div>
+                <label for="subject">Subject</label><br>
+                <input type="text" placeholder="Search with subject" id="subject">
+            </div>
+
+            <div>
+                <label for="publishDate">Publish Date</label><br>
+                <input type="date" placeholder="Search based on publish date" id="publishDate">
+            </div>
+        </section>
+        <br>
+        <center>
+            <button class="filter" onclick="applyFilters()">Apply filters</button>&ensp;&emsp;
+            <button class="filter" onclick="Reset()">Reset</button>
+        </center>
+        <br>
+    </section>
+
+    <br><br>
+
+    <center><div id="search"></div></center>
+
+    <br><br>
+    <section class="grid" id="books">
+        <div class="card">
+            <h2>Book Name: 1984</h2>
+            <p>Author Name: George Orwell</p>
+            <p>Publish Date: 08/06/1949</p>
+            <p>Subject Name: Dystopian surveillance society</p>
+            <a class="downloadURL" href="" download> <button class="download"><span class="download-content">Download book</span></button> </a>
+        </div>
+
+        <div class="card">
+            <h2>Book Name: To Kill a Mockingbird</h2>
+            <p>Author Name: Harper Lee</p>
+            <p>Publish Date: 11/07/1960</p>
+            <p>Subject Name: Racial injustice in the American South</p>
+            <a class="downloadURL" href="" download> <button class="download"><span class="download-content">Download book</span></button> </a>
+        </div>
+
+        <div class="card">
+            <h2>Book Name: The Catcher in the Rye</h2>
+            <p>Author Name: J.D. Salinger</p>
+            <p>Publish Date: 16/07/1951</p>
+            <p>Subject Name: Adolescent angst and alienation</p>
+            <a class="downloadURL" href="" download> <button class="download"><span class="download-content">Download book</span></button> </a>
+        </div>
+
+        <div class="card">
+            <h2>Book Name: The Great Gatsby</h2>
+            <p>Author Name: F. Scott Fitzgerald </p>
+            <p>Publish Date: 10/04/1925</p>
+            <p>Subject Name: Jazz Age decadence and the American Dream</p>
+            <a class="downloadURL" href="" download> <button class="download"><span class="download-content">Download book</span></button> </a>
+        </div>
+
+        <div class="card">
+            <h2>Book Name: Pride and Prejudice</h2>
+            <p>Author Name: Jane Austen</p>
+            <p>Publish Date: 28/01/1813</p>
+            <p>Subject Name: Social class and love in 19th-century England</p>
+            <a class="downloadURL" href="" download> <button class="download"><span class="download-content">Download book</span></button> </a>
+        </div>
+
+        <div class="card">
+            <h2>Book Name: The Lord of the Rings</h2>
+            <p>Author Name: J.R.R. Tolkien</p>
+            <p>Publish Date: 29/07/1954</p>
+            <p>Subject Name: Epic fantasy quest to destroy a powerful ring</p>
+            <a class="downloadURL" href="" download> <button class="download"><span class="download-content">Download book</span></button> </a>
+        </div>
+
+        <div class="card">
+            <h2>Book Name: Brave New World</h2>
+            <p>Author Name: Aldous Huxley</p>
+            <p>Publish Date: 07/10/1932</p>
+            <p>Subject Name: Technological advancements and a controlled society</p>
+            <a class="downloadURL" href="" download> <button class="download"><span class="download-content">Download book</span></button> </a>
+        </div>
+
+        <div class="card">
+            <h2>Book Name: The Diary of a Young Girl</h2>
+            <p>Author Name: Annie Frank</p>
+            <p>Publish Date: 25/06/1947</p>
+            <p>Subject Name: Personal account of life in hiding during the Holocaust</p>
+            <a class="downloadURL" href="" download> <button class="download"><span class="download-content">Download book</span></button> </a>
+        </div>
+
+        <div class="card">
+            <h2>Book Name: The Hobbit</h2>
+            <p>Author Name: J.R.R. Tolkien</p>
+            <p>Publish Date: 21/09/1937</p>
+            <p>Subject Name: A fantasy adventure about Bilbo Baggins and his journey to reclaim a treasure guarded by a dragon</p>
+            <a class="downloadURL" href="" download> <button class="download"><span class="download-content">Download book</span></button> </a>
+        </div>
+
+        <div class="card">
+            <h2>Book Name: The Alchemist</h2>
+            <p>Author Name: Paulo Coelho</p>
+            <p>Publish Date: 29/07/1954</p>
+            <p>Subject Name: Epic fantasy quest to destroy a powerful ring</p>
+            <a class="downloadURL" href="" download> <button class="download"><span class="download-content">Download book</span></button> </a>
+        </div>
+
+        <div class="card">
+            <h2>Book Name: The Catch-22</h2>
+            <p>Author Name: Joseph Heller</p>
+            <p>Publish Date: 10/11/1961</p>
+            <p>Subject Name: A satirical novel set during World War II, exploring the absurdity of bureaucracy and the paradoxical nature of war</p>
+            <a class="downloadURL" href="" download> <button class="download"><span class="download-content">Download book</span></button> </a>
+        </div>
+
+        <div class="card">
+            <h2>Book Name: The Handmaid's Tale</h2>
+            <p>Author Name: Margaret Atwood</p>
+            <p>Publish Date: 25/06/1985</p>
+            <p>Subject Name: A dystopian story set in a totalitarian society where women are oppressed and used for reproductive purposes</p>
+            <a class="downloadURL" href="" download> <button class="download"><span class="download-content">Download book</span></button> </a>
+        </div>
+    </section>
+</body>
+</html>

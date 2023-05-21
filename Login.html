@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<script>
+    function validate()
+    {
+        let uname = document.getElementById("username");
+        let upwd = document.getElementById("userpwd");
+        if(uname.value == "admin" && upwd.value == "123456")
+        {
+            alert("Login Success");
+            window.open("Display.html");
+        }
+        else if(uname.value.length == 0)
+        {
+            alert("Please enter your user name!");
+        }
+        else if(upwd.value.length == 0)
+        {
+            alert("Please enter a password!");
+        }
+        else
+        {
+            alert("Invalid username or password");
+        }
+    }
+</script>
+
+<body>
+    <center><p>Log In</p></center>
+    <center>
+        <div class="forms">
+            <form name="Login" class="grid">
+                <label for="username">Name</label>
+                <input type="text" id="username" name="username" placeholder="Enter your name" required>
+
+                <label for="userpwd">Password</label>
+                <input type="password" id="userpwd" name="userpwd" placeholder="Enter your password" required>
+            </form>
+            <p style="font-size: 16px;">Don't have an account? <a style="color:white;" href="Signin.html">Click here to create an account</a></p>
+            <br>
+            <button onclick="validate()">LOG IN</button>
+            <br><br>
+        </div>
+    </center>
+</body>
+</html>
